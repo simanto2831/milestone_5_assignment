@@ -1,0 +1,16 @@
+/* roboto font-family */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+.green_text {
+  color: #1dd100;
+}
+.black_text {
+  color: #030712;
+}
+.gray_text {
+  color: #030712b3;
+}

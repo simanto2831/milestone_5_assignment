@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Das Travel</title>
+    <!-- Daisy UI cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.8.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- local css link -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body class="">
+    <header class="px-20 py-8">
+      <!-- navbar section -->
+      <section id="navbar">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <a class="text-5xl font-bold green_text">DAS Travel</a>
+          </div>
+          <div class="navbar-center lg:flex">
+            <ul class="menu menu-horizontal px-1 gray_text text-lg">
+              <li><a class="hover:text-white hover:bg-green-600">Home</a></li>
+              <li><a class="hover:text-white hover:bg-green-600">About</a></li>
+              <li>
+                <a class="hover:text-white hover:bg-green-600">Destination</a>
+              </li>
+              <li><a class="hover:text-white hover:bg-green-600">Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="btn green_text text-xl bg-green-100 border-green-300 hover:text-white hover:bg-green-600"
+              >Bus <img src="./images/bus-icon.png" alt="bus-icon"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- banner section -->
+      <section id="banner" class="mt-4 mb-10">
+        <div class="hero bg-base-200 min-h-full">
+          <img src="./images/banner.png" class="min-w-full" />
+          <div class=""></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-xl">
+              <h1 class="mt-16 mb-7 text-5xl font-bold text-white">
+                End-to-End Travel with
+              </h1>
+              <h1 class="text-7xl font-bold my-6 green_text">DAS Travel</h1>
+              <p class="my-7 leading-7">
+                DAS Travel offers convenient and flexible transportation
+                solutions for passengers outside of regular public transit
+                systems.
+              </p>
+              <button
+                class="btn bg-[#1dd100] border-none mb-28 hover:text-[#1dd100] hover:bg-green-200"
+              >
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- banner badges -->
+        <div class="flex justify-evenly">
+          <div
+            class="flex border-[#1dd100] border-b-4 py-8 px-20 max-w-fit rounded-3xl"
+          >
+            <img src="./images/people.png" alt="group-people logo" />
+            <div>
+              <h1 class="text-5xl font-bold">500K+</h1>
+              <p class="gray_text text-xl">Registered Users</p>
+            </div>
+          </div>
+
+          <div
+            class="flex border-[#1dd100] border-b-4 py-8 px-20 max-w-fit rounded-3xl"
+          >
+            <img src="./images/ticket-cupon.png" alt="group-people logo" />
+            <div>
+              <h1 class="text-5xl font-bold">1.7Lacks</h1>
+              <p class="gray_text text-xl">Tickets sold</p>
+            </div>
+          </div>
+
+          <div
+            class="flex border-[#1dd100] border-b-4 py-8 px-20 max-w-fit rounded-3xl"
+          >
+            <img src="./images/stoppage.png" alt="stoppage" />
+            <div>
+              <h1 class="text-5xl font-bold">80K+</h1>
+              <p class="gray_text text-xl">Rental partners</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main></main>
+    <footer></footer>
+    <!-- local js file link -->
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
