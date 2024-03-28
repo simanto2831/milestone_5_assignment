@@ -12,6 +12,12 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
     <!-- local css link -->
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
@@ -218,6 +224,176 @@
         </div>
 
         <!-- seat selection part -->
+        <div class="bg-white p-10 flex gap-16 mx-32 rounded-3xl">
+          <!-- left div -->
+          <div class="border-r-4 border-dashed px-8">
+            <h2 class="text-3xl font-bold mb-5">Select Your Seat</h2>
+
+            <div
+              class="flex justify-between border-b-2 border-t-2 border-dashed py-8"
+            >
+              <p class="flex items-center text-xl gray_text gap-3 font-bold">
+                <img src="./images/seat-gray.png" alt="" /> Available
+              </p>
+              <p class="flex items-center text-xl green_text font-bold gap-3">
+                <img src="./images/seat-green-filled.png" alt="" /> Selected
+              </p>
+            </div>
+
+            <div class="flex justify-end my-8">
+              <button class="btn px-10">
+                <i class="fa-solid fa-dharmachakra"></i>
+              </button>
+            </div>
+            <!-- seat -->
+            <div class="flex gap-16">
+              <!-- left seat -->
+              <div class="grid grid-cols-3 gap-8">
+                <button id="A" class="">A</button>
+                <button id="A1" class="btn px-10">A1</button>
+                <button id="A2" class="btn px-10">A2</button>
+                <button id="B" class="">B</button>
+                <button id="B1" class="btn px-10">B1</button>
+                <button id="B2" class="btn px-10">B2</button>
+                <button id="C" class="">C</button>
+                <button id="C1" class="btn px-10">C1</button>
+                <button id="C2" class="btn px-10">C2</button>
+                <button id="D" class="">D</button>
+                <button id="D1" class="btn px-10">D1</button>
+                <button id="D2" class="btn px-10">D2</button>
+                <button id="E" class="">E</button>
+                <button id="E1" class="btn px-10">E1</button>
+                <button id="E2" class="btn px-10">E2</button>
+                <button id="F" class="">F</button>
+                <button id="F1" class="btn px-10">F1</button>
+                <button id="F2" class="btn px-10">F2</button>
+                <button id="G" class="">G</button>
+                <button id="G1" class="btn px-10">G1</button>
+                <button id="G2" class="btn px-10">G2</button>
+                <button id="H" class="">H</button>
+                <button id="H1" class="btn px-10">H1</button>
+                <button id="H2" class="btn px-10">H2</button>
+                <button id="I" class="">I</button>
+                <button id="I1" class="btn px-10">I1</button>
+                <button id="I2" class="btn px-10">I2</button>
+                <button id="J" class="">J</button>
+                <button id="J1" class="btn px-10">J1</button>
+                <button id="J2" class="btn px-10">J2</button>
+              </div>
+              <!-- right seat -->
+              <div class="grid grid-cols-2 gap-8">
+                <button id="A3" class="btn px-10">A3</button>
+                <button id="A4" class="btn px-10">A4</button>
+
+                <button id="B3" class="btn px-10">B3</button>
+                <button id="B4" class="btn px-10">B4</button>
+
+                <button id="C3" class="btn px-10">C3</button>
+                <button id="C4" class="btn px-10">C4</button>
+
+                <button id="D3" class="btn px-10">D3</button>
+                <button id="D4" class="btn px-10">D4</button>
+
+                <button id="E3" class="btn px-10">E3</button>
+                <button id="E4" class="btn px-10">E4</button>
+
+                <button id="F3" class="btn px-10">F3</button>
+                <button id="F4" class="btn px-10">F4</button>
+
+                <button id="G3" class="btn px-10">G3</button>
+                <button id="G4" class="btn px-10">G4</button>
+
+                <button id="H3" class="btn px-10">H3</button>
+                <button id="H4" class="btn px-10">H4</button>
+
+                <button id="I3" class="btn px-10">I3</button>
+                <button id="I4" class="btn px-10">I4</button>
+
+                <button id="J3" class="btn px-10">J3</button>
+                <button id="J4" class="btn px-10">J4</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- right div -->
+          <div class="flex-1">
+            <h2 class="text-3xl font-bold mb-5 border-b-4 border-dashed pb-5">
+              Select Your Seat
+            </h2>
+            <div class="bg-[#F7F8F8] rounded-2xl p-8">
+              <div class="flex justify-between border-b-4 border-dashed pb-6">
+                <p class="text-xl font-bold">
+                  Seat
+                  <span class="text-white px-4 bg-[#1dd100] rounded-2xl"
+                    >2</span
+                  >
+                </p>
+                <p class="text-xl font-bold">Class</p>
+                <p class="text-xl font-bold">Price</p>
+              </div>
+              <div class="flex justify-between py-4">
+                <p class="text-xl font-bold gray_text">C2</p>
+                <p class="text-xl font-bold gray_text">Economy</p>
+                <p class="text-xl font-bold gray_text">550</p>
+              </div>
+              <div class="flex justify-between py-4 border-b-4">
+                <p class="text-xl font-bold gray_text">C2</p>
+                <p class="text-xl font-bold gray_text">Economy</p>
+                <p class="text-xl font-bold gray_text">550</p>
+              </div>
+              <div class="flex justify-between py-4">
+                <p class="text-2xl font-bold">Total Price</p>
+                <p class="text-2xl font-bold">BDT 1100</p>
+              </div>
+              <div
+                class="bg-white rounded-2xl flex justify-between items-center"
+              >
+                <input type="text" placeholder="Have any coupon?" class="p-6" />
+                <button class="btn btn-lg bg-[#1dd100] text-white">
+                  Apply
+                </button>
+              </div>
+              <div class="flex justify-between pt-6">
+                <p class="text-2xl font-bold">Grand Total</p>
+                <p class="text-2xl font-bold">BDT 1100</p>
+              </div>
+            </div>
+
+            <h2 class="text-3xl font-bold py-4">Passenger Name*</h2>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              class="p-5 border w-full rounded-3xl"
+            />
+
+            <h2 class="text-3xl font-bold py-4">Phone Number*</h2>
+            <input
+              type="text"
+              placeholder="Enter your phone number"
+              class="p-5 border w-full rounded-3xl"
+            />
+
+            <h2 class="text-3xl font-bold py-4">Email ID</h2>
+            <input
+              type="email"
+              placeholder="Enter your email ID"
+              class="p-5 border w-full rounded-3xl"
+            />
+
+            <button class="btn bg-[#1dd100] text-white w-full my-5 rounded-2xl">
+              Next
+            </button>
+
+            <div class="flex justify-around">
+              <p class="text-xl gray_text font-semibold border-b-4">
+                Terms and Conditions
+              </p>
+              <p class="text-xl gray_text font-semibold border-b-4">
+                Cancellation Policy
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>
