@@ -14,3 +14,12 @@
 .gray_text {
   color: #030712b3;
 }
+.booked_seat_container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.bg_green {
+  background-color: #1dd100 !important;
+}
