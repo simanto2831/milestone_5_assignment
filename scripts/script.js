@@ -77,3 +77,28 @@ function applyCoupon(value) {
 
   document.getElementById("grand_total").innerText = grand_total;
 }
+
+// last step : enabling success section
+function handleFormSubmit() {
+  const nameInp = document.querySelector('input[name = "name"]');
+  const phoneInp = document.querySelector('input[name="phone"]');
+  const emailInp = document.querySelector('input[name="email"]');
+
+  if (
+    nameInp.value.trim() === "" ||
+    phoneInp.value.trim() === "" ||
+    emailInp.value.trim() === ""
+  ) {
+    alert("Please fill in all the required fields");
+    return;
+  }
+
+  document.getElementById("success_section").classList.remove("hidden");
+  document.getElementById("header_section").classList.add("hidden");
+  document.getElementById("offer_section").classList.add("hidden");
+  document.getElementById("ticket").classList.add("hidden");
+  document.getElementById("footer_section").classList.add("hidden");
+}
+
+const next_btn = document.getElementById("next_btn");
+next_btn.addEventListener("click", handleFormSubmit);
